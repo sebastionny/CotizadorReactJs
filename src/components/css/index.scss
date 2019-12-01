@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
+$colorTextB: #fff;
+$colorTextA: #46b5d1;
+
+html{
+  background: #151965;
+  font-family: 'Baskervville', serif;
+
+}
+
+#root{
+  margin: 0;
+  padding: 0;
+  color: $colorTextA;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.top{
+  text-align: center;
+  background: #fa4252;
+  padding: 0.4em;
+  border-radius: 8px;
+  h1{
+    color: $colorTextB;
+  }
+}
+
+.form{
+  font-size: 1.2em;
+  color: $colorTextB;
+  padding-top: 10px;
+  .campo{
+    padding: 10px;
+    label{
+      margin-right: 40px;
+    }
+  }
+  .btn{
+    background: #04f082;
+    width: 100%;
+    font-family: 'Baskervville', serif;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+  }
+}
+
+.resumen{
+  margin-top: 30px;
+  background: $colorTextB;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.gran-total{
+  color: $colorTextB;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+span.resultado {
+  position: relative;
+  width: 100%;
+}
+
+.resultado-enter {
+  transition: .5s;
+  transform: translateY(120%) ;
+}
+
+.resultado-enter.resultado-enter-active{
+  transform: translateY(120%);
+}
+.resultado-exit{
+  transform: translateY(0);
+  transition:.5s;
+  position : absolute;
+  left: 0;
+  bottom : 0;
+  width: 100%;
+}
+.resultado-exit-active{
+  opacity: 0;
+  transform: translateY(-100%);
+}
+    
